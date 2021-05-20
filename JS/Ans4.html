@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Check for validation</title>
+    </head>
+    <body>
+        <form>
+            <label>FirstName:</label>
+            <input type=”text”  id="fn" name=”firstname” /><br>
+            <input type="checkbox" id="check" name="check" value="CheckMe" />
+            Check Me <br><br>
+            <input type="submit" value="submit" onclick="formValidation()"/>
+         </form>
+        <script>
+            function formValidation(){
+                if(document.getElementById("fn").value == "" || document.getElementById("check").checked === false){
+                    alert("Enter the details");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Even</title>
+    </head>
+    <body>
+        <button type="button" onclick="even()">Even Numbers</button> 
+        <h2 id="hid"></h2>
+        <script>
+            function even(){
+                let arr = [2,3,4,5,6,7,8];
+                let newArr = [];
+                for(let i = 0; i < arr.length-1; i++){
+                   if(arr[i] % 2 === 0){
+                       newArr.push(arr[i]);
+                   }
+                }
+                document.getElementById("hid").innerHTML = newArr;
+            }
+        </script>
+    </body>
+</html>
